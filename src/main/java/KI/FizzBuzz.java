@@ -14,7 +14,7 @@ import java.util.Scanner;
 import java.util.Random;
 
 public class FizzBuzz {
-    public static String convert(int input){
+    public static String fizzBuzzMachine(int input){
         if (input % 15 == 0){
             return "FizzBuzz";
         }

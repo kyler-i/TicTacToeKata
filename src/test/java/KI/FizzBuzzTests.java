@@ -27,32 +27,27 @@ class FizzBuzzTests {
 
     @Test
     void canCovertToString(){
-        assertEquals("1", fb.convert(1));
-    }
-
-    @Test
-    void threeReturnsFizz(){
-        assertEquals("Fizz", fb.convert(3));
+        assertEquals("1", fb.fizzBuzzMachine(1));
     }
 
     @Test 
     void multiplesOfThree(){
-        assertEquals("Fizz", fb.convert(9));
-        assertEquals("Fizz", fb.convert(18));
-        assertEquals("Fizz", fb.convert(27));
+        assertEquals("Fizz", fb.fizzBuzzMachine(9));
+        assertEquals("Fizz", fb.fizzBuzzMachine(18));
+        assertEquals("Fizz", fb.fizzBuzzMachine(27));
     }
 
     @Test
     void multiplesOfFive(){
-        assertEquals("Buzz", fb.convert(5));
-        assertEquals("Buzz", fb.convert(10));
-        assertEquals("Buzz", fb.convert(100));
+        assertEquals("Buzz", fb.fizzBuzzMachine(5));
+        assertEquals("Buzz", fb.fizzBuzzMachine(10));
+        assertEquals("Buzz", fb.fizzBuzzMachine(100));
     }
 
     @Test 
     void multiplesOfThreeAndFive(){
-        assertEquals("FizzBuzz", fb.convert(15));
-        assertEquals("FizzBuzz", fb.convert(30));
-        assertEquals("FizzBuzz", fb.convert(45));
+        assertEquals("FizzBuzz", fb.fizzBuzzMachine(15));
+        assertEquals("FizzBuzz", fb.fizzBuzzMachine(30));
+        assertEquals("FizzBuzz", fb.fizzBuzzMachine(45));
     }
 }
