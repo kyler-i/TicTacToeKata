@@ -29,4 +29,11 @@ class FizzBuzzTests {
     void canCovertToString(){
         assertEquals("1", fb.convert(1));
     }
+
+    @Test
+    void multiplesOfThree(){
+        assertEquals("Fizz", fb.convert(3));
+        assertEquals("Fizz", fb.convert(6));
+        assertEquals("Fizz", fb.convert(9));
+    }
 }
