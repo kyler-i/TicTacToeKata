@@ -20,7 +20,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 class FizzBuzzTests {
 
 	@Test
-    public void returnAsString(){
-        assertEquals("1", 1);
+    public void canCreateClass(){
+        FizzBuzz fb = new FizzBuzz();
     }
 }
