@@ -29,4 +29,9 @@ public class FizzBuzz {
         }
         return Integer.toString(input);
     }
+    public static void PrintFizzBuzz(){
+        for (int i = 1; i <= 100; i++) {
+            System.out.println(fizzBuzzMachine(i));
+        }
+    }
 }
