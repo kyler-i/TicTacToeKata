@@ -19,13 +19,15 @@ public class FizzBuzz {
             return "FizzBuzz";
         }
         
-        if (input % 5 == 0){
+        else if (input % 5 == 0){
             return "Buzz";
         }
 
-        if (input % 3 == 0){
+        else if (input % 3 == 0){
             return "Fizz";
         }
         return Integer.toString(input);
     }
+
+
 }
