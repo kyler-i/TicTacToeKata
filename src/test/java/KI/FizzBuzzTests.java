@@ -48,4 +48,11 @@ class FizzBuzzTests {
         assertEquals("Buzz", fb.convert(10));
         assertEquals("Buzz", fb.convert(100));
     }
+
+    @Test 
+    void multiplesOfThreeAndFive(){
+        assertEquals("FizzBuzz", fb.convert(15));
+        assertEquals("FizzBuzz", fb.convert(30));
+        assertEquals("FizzBuzz", fb.convert(45));
+    }
 }
