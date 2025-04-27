@@ -12,15 +12,21 @@ package KI;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
 class FizzBuzzTests {
+    FizzBuzz fb;
+	@BeforeEach
+    void createClass(){
+        fb = new FizzBuzz();
+    }
 
-	@Test
-    public void canCreateClass(){
-        FizzBuzz fb = new FizzBuzz();
+    @Test
+    void canCovertToString(){
+        assertEquals("1", fb.convert(1));
     }
 }
