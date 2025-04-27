@@ -34,4 +34,11 @@ class FizzBuzzTests {
     void threeReturnsFizz(){
         assertEquals("Fizz", fb.convert(3));
     }
+
+    @Test 
+    void multiplesOfThree(){
+        assertEquals("Fizz", fb.convert(9));
+        assertEquals("Fizz", fb.convert(18));
+        assertEquals("Fizz", fb.convert(27));
+    }
 }
