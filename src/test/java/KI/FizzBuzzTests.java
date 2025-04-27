@@ -11,6 +11,12 @@
 package KI;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -49,5 +55,24 @@ class FizzBuzzTests {
         assertEquals("FizzBuzz", fb.fizzBuzzMachine(15));
         assertEquals("FizzBuzz", fb.fizzBuzzMachine(30));
         assertEquals("FizzBuzz", fb.fizzBuzzMachine(45));
+    }
+
+    @Test
+    void printUpToOneHundred(){
+        ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+        PrintStream originalOut = System.out;
+        System.setOut(new PrintStream(outputStream));
+
+        fb.PrintFizzBuzz();
+
+        String[] outputLines = outputStream.toString().split(System.lineSeparator());
+        
+        assertEquals(100, outputLines.length);
+        assertEquals("1", outputLines[0]);
+        assertEquals("Fizz", outputLines[2]);
+        assertEquals("Buzz", outputLines[4]);
+        assertEquals("FizzBuzz", outputLines[14]);
+
+        System.setOut(originalOut);
     }
 }

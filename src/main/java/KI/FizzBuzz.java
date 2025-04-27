@@ -11,6 +11,7 @@
 package KI;
 
 import java.util.Scanner;
+
 import java.util.Random;
 
 public class FizzBuzz {
@@ -28,6 +29,4 @@ public class FizzBuzz {
         }
         return Integer.toString(input);
     }
-
-
 }
