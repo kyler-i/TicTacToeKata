@@ -15,6 +15,10 @@ import java.util.Random;
 
 public class FizzBuzz {
     public static String convert(int input){
+        if (input % 5 == 0){
+            return "Buzz";
+        }
+        
         if (input % 3 == 0){
             return "Fizz";
         }
